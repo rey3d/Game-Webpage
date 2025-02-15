@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-page">
+        <div class="h1-container">
+            <h1>Rock Paper Scissor</h1>
+        </div>
+        <div class="container">
+            <div class="guidelines-anchor">
+                <a href="#guidelines-page">Read Guidelines of Game</a>
+            </div>
+            <div class="time-p">
+                <p><b>Time 
+                </b><span id="time">00:00</span></p>
+            </div>
+            
+
+        </div>
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img class="choice-img"  src="images/rock.png" alt="rock image">
+            </div>
+            <div class="choice" id="paper">
+                <img class="choice-img" src="images/paper.png" alt="paper image">
+            </div>
+            <div class="choice" id="scissors">
+                <img class="choice-img" src="images/scissors.png" alt="scissors image">
+            </div>
+        </div>
+        <div class="score-board">
+            <div class="score">
+                    <h2 id="user-score">0</h2>
+                    <p>You</p>
+            </div>
+            <div class="score">
+                <h2 id="comp-score">0</h2>
+                <p>Comp</p>
+            </div>
+        </div>
+        <div class="message-container">
+            <button  id="pick-button">Pick Your Choice</button><br>
+            <p id="message"></p>
+        </div>
+    </div>
+    <div class="guidelines-page" id="guidelines-page">
+        <h1>Guidelines For Game</h1>
+        <br>
+        <h4>Start the Game</h4>
+            <ul>
+                 <li>Click on the "Pick Your Choice" button to begin the game.</li>
+                 <li><b>Important:</b> You won't be able to select a choice without clicking this button first.</li>
+            </ul>
+         <h4>Select Your Choice</h4>
+            <ul>
+                <li>Choose one of the three choices: Rock, Paper, or Scissors by clicking on the respective button.</li>
+            </ul>
+         <h4>Compete Against the Computer</h4>
+            <ul>
+                <li>Your choice will be compared to the computer's choice.</li>
+                    <li>The winner of the round will be determined based on the classic rules:</li> 
+                        <ul class="inside-list">
+                            <li>Rock beats Scissors.</li>
+                            <li>Scissors beats Paper.</li>
+                            <li>Paper beats Rock.</li>
+                        </ul>
+            </ul> 
+        <h4>Time Limit</h4>
+          <ul>
+            <li>You have only  '30 seconds' to play as many rounds as you can.</li>
+             <li>Try to beat the computer's score within this time limit.</li>
+          </ul>      
+           
+        <h4>End of the Game</h4>
+           <ul>
+            <li>After 30 seconds, the game will end and you need resart the game</li>
+            <li>The player with the highest score is declared the winner.</li>
+           </ul>   
+           
+
+    </div>
+    <footer>
+        <h1>To Connet Me</h1>
+                <div class="footer-imgs">
+                    <a href="https://www.linkedin.com/in/lakshmiprasadreddy03/"><img class="footer-img-linkedin" src="images/linkedin-icon.png" alt="linkedin_icon"></a> 
+                    <a href="https://github.com/rey3d"><img class="footer-img-github" src="images/GitHub-Symbol.png" alt="github_icon"></a> 
+                </div>
+    </footer>
+   <script src="script.js">
+
+   </script>
+</body>
+</html>
