@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+.game-page{
+    height: 100vh;
+    text-align: center;
+}
+.h1-container{
+    background-color: #000000b5;
+    color: #ffffffc2;
+    height: 5rem;
+    line-height: 5rem;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+.guidelines-anchor a:hover{
+    text-decoration: underline;
+}
+.guidelines-anchor a{
+    color: #d09a9a;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.time-p{
+    font-size: 1.7rem;
+    color: #7784de;
+}
+.choices{
+    padding-top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
+   margin-top: 2rem;
+   
+}
+.choice{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+    cursor: pointer;
+    background-color: rgb(26, 26, 42);
+}
+.choice-img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.score-board{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   margin-top: 3rem;
+   gap: 2rem;
+}
+.score{
+    margin: 10px;
+}
+.message-container{
+    margin-top: 3rem; 
+
+}
+#pick-button:hover{
+    transform: scale(1.2);
+    border: 1px solid rgb(41, 49, 79);
+    background-color: black;
+    color: #ffffff;
+}
+#pick-button{
+    font-size: 1rem;
+    display: inline;
+   border-radius: 1rem;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    padding: 0.8rem;
+    transition: all 5ms ease 1ms;
+}
+#message{
+    
+    font-size: 2rem;
+    display: inline;
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    display: none;
+}
+.guidelines-page{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+ul{
+   padding-left: 50px;
+}
+.inside-list{
+    padding-left: 50px;
+}
+footer{
+    text-align: center;
+    background-color: #4c4b4ed1;
+    color:#efe3e3d6;
+}
+
+.footer-img-linkedin:hover{
+    transform: scale(1.2);
+}
+.footer-img-linkedin{
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+.footer-img-github:hover{
+    transform: scale(1.2);
+}
+.footer-img-github{
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+
