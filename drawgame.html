@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Draw</title>
+    <style>
+        body{
+            background: url('images/background.jpg') no-repeat center;
+            background-size: cover;
+            margin: 0;
+            text-align: center;
+        }
+        .drawgame{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #7c756e8a;;
+            color: white; 
+        }
+        .drawgame-h1:hover{
+            color: black;
+        }
+        .drawgame-h1{
+            font-size: 7rem;
+            height: 60px;
+            color: #0000007d;
+            
+        }
+        .drawgame-h2{
+            font-size: 3rem;
+            height: 20px;
+            color: #000000c9;
+        }
+        .drawgame-h2 img{
+            height: 35px;
+            border-radius: 50%;
+        }
+        .drawgame-choice{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .yes img{
+            border-radius: 50%;
+            height:100px; 
+            cursor: pointer;
+        }
+        #para{
+            visibility: hidden;
+            color:#b0acacbd ;
+        }
+    </style>
+</head>
+<body>
+    <div class="drawgame">
+        <h1 class="drawgame-h1">Game Over</h1>
+        <h2 class="drawgame-h2">Game was Draw ⚠️</h2>
+        <h2 class="drawgame-h2">Play Again<img src="images/repeat.png" alt="repeat photo"></h2>
+        <div class="drawgame-choice">
+            <div class="yes">
+                <img src="images/yes.jpg"  alt="comedypicture" id="clickable_image">
+                 <br>
+                <p id="para">Click on Image To Play Again !!!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+      let img=document.querySelector('#clickable_image');
+        let para=document.querySelector('#para');
+        img.addEventListener("click",()=>{
+            window.location.href="index.html";
+        });
+        img.addEventListener("mouseover",()=>{
+                para.style.visibility='visible';
+         });
+         img.addEventListener("mouseleave",()=>{
+                para.style.visibility='hidden';
+         });
+    </script>
+</body>
+</html>
