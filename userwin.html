@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Won</title>
+    <style>
+        body{
+            background: url('images/background.jpg') no-repeat center;
+            background-size: cover; 
+            margin: 0;
+            text-align: center;
+        }
+        .userwin{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                color: white;
+                background-color: #7c756e8a;
+            }
+        .userwin-h1:hover{
+            color: black;
+        }
+        .userwin-h1{
+            font-size: 6rem;
+            height: 50px;
+            color: #0000007d;
+        }
+        .userwin-h1 img{
+            height: 50px;
+            border-radius: 50%;
+        }
+        .userwin-h2{
+            font-size: 3rem;
+            color:#000000c9;;
+        }
+        .userwin-h2 img{
+            height: 35px;
+            border-radius: 50%;
+        }
+        .userwin-choice{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         
+        }
+        .userwin-choice img{
+            height:100px; 
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #para{
+            visibility: hidden;
+            color: #b0acacbd ;
+        }
+    </style>
+</head>
+<body>
+    <div class="userwin">
+        <h1 class="userwin-h1">You Won The Game <img src="images/wongame.jpg" alt="lost photo"></h1>
+        <h2 class="userwin-h2">Play Again <img src="images/repeat.png" alt="repeat photo"></h2>
+        <div class="userwin-choice">
+                <img src="images/yes.jpg"  alt="comedy picture" id="clickable_image">
+                <br>
+                <p id="para">Click on Image to Play !!!</p>
+        </div>
+    </div>
+    <script>
+        
+        let img=document.querySelector('#clickable_image');
+        let para=document.querySelector('#para');
+        img.addEventListener("click",()=>{
+            window.location.href="index.html";
+        });
+        img.addEventListener("mouseover",(e)=>{
+                para.style.visibility='visible';
+                console.log(e);
+
+         });
+         img.addEventListener("mouseleave",(e)=>{
+                para.style.visibility='hidden';
+                console.log(e);
+
+         });
+
+    </script>
+</body>
+</html>
